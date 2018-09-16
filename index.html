@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARCTIC MONKEYS</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+
+	
+</head>
+<body>
+	<div id="backgd">
+		<img id="logo" src="./img/arctic_logo.png">
+	</div>
+	<div id="circle1">
+		<p id="FourOut">Four Out<br>Of Five</p>
+	</div>
+	<div id="circle2">
+		<p id="DoIWanna">Do I<br>Wanna<br>Know</p>
+	</div>
+	<div id="circle3">
+		<p id="No1Party">No.1 Party<br>Anthem</p>
+	</div>
+	<div id="circle4">
+		<p id="CryingL">Crying<br>Lightning</p>
+	</div>
+	<div id="circle5">
+		<p id="RuMine"> R U Mine? </p>
+	</div>
+	<div id="circle6">
+		<p id="Arabella">Arabella</p>
+	</div>
+	<div id="circle7">
+		<p id="WhatE">Whatever People<br>Say I Am That's<br> What I'm not</p>
+	</div>
+
+	<div id="circle8">
+	</div>
+
+	<audio id="FourOutM">
+		<source src="./music/FourOutOfFive.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="DoIWannaM">
+		<source src="./music/DoIWannaKnow.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="No1PartyM">
+		<source src="./music/No1PartyAnthem.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="ArabellaM">
+		<source src="./music/Arabella.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="CryingLM">
+		<source src="./music/CryingLightning.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="WhatEM">
+		<source src="./music/WhatEverPeople.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="RuMineM">
+		<source src="./music/RUMine.mp3" type="audio/mpeg">
+	</audio>
+
+	<script type="text/javascript">
+
+		FourOutM.pause();
+		DoIWannaM.pause();
+		No1PartyM.pause();
+		ArabellaM.pause();
+		CryingLM.pause();
+		WhatEM.pause();
+		RuMineM.pause();
+
+		var toggle = "off";
+
+		FourOut.onclick = function(){
+			if(toggle == "off"){
+				FourOutM.play();
+				toggle = "on";
+				circle1.style.width = "210px";
+				circle1.style.height = "210px";
+			}else {
+				FourOutM.pause();
+				FourOutM.load();
+				toggle = "off";
+				circle1.style.width = "190px";
+				circle1.style.height = "190px";
+			}	
+		
+		}
+		
+		DoIWanna.onclick = function(){
+			if(toggle == "off"){
+				DoIWannaM.play();
+				toggle = "on";
+				circle2.style.width = "120px";
+				circle2.style.height = "120px";
+				DoIWanna.style.top = "25%";
+			}else{
+				DoIWannaM.pause();
+				DoIWannaM.load();
+				toggle = "off";
+				circle2.style.width = "90px";
+				circle2.style.height = "90px";
+				DoIWanna.style.top = "15%";
+			}
+			
+			
+
+		}
+
+		No1Party.onclick = function(){
+			if(toggle == "off"){
+				No1PartyM.play();
+				toggle = "on";
+				circle3.style.width = "150px";
+				circle3.style.height = "150px";
+				No1Party.style.top = "40%";
+			}else{
+				No1PartyM.pause();
+				No1PartyM.load();
+				toggle = "off";
+				circle3.style.width = "120px";
+				circle3.style.height = "120px";
+				No1Party.style.top = "35%";
+			}
+
+			
+
+		}
+
+		CryingL.onclick = function(){
+			if(toggle == "off"){
+				CryingLM.play();
+				toggle = "on";
+				circle4.style.width = "180px";
+				circle4.style.height = "180px";
+				CryingL.style.top = "40%";
+			}else{
+				CryingLM.pause();
+				CryingLM.load();
+				toggle = "off";
+				circle4.style.width = "150px";
+				circle4.style.height = "150px";
+				CryingL.style.top = "35%";
+			}
+		}
+
+		Arabella.onclick = function(){
+			if(toggle == "off"){
+				ArabellaM.play();
+				toggle = "on";
+				circle6.style.width = "120px";
+				circle6.style.height = "120px";
+				Arabella.style.top = "45%";
+			}else{
+				ArabellaM.pause();
+				ArabellaM.load();
+				toggle = "off";
+				circle6.style.width = "90px";
+				circle6.style.height = "90px";
+				Arabella.style.top = "40%";
+			}
+		}
+
+		WhatE.onclick = function(){
+			if(toggle == "off"){
+				WhatEM.play();
+				toggle = "on";
+				circle7.style.width = "190px";
+				circle7.style.height = "190px";
+				WhatE.style.top = "40%";
+			}else{
+				WhatEM.pause();
+				WhatEM.load();
+				toggle = "off";
+				circle7.style.width = "160px";
+				circle7.style.height = "160px";
+				WhatE.style.top = "35%";
+			}
+		}
+
+		RuMine.onclick = function(){
+			if(toggle == "off"){
+				RuMineM.play();
+				toggle = "on";
+				circle5.style.width = "160px";
+				circle5.style.height = "160px";
+				RuMine.style.top = "45%";
+			}else{
+				RuMineM.pause();
+				RuMineM.load();
+				toggle = "off";
+				circle5.style.width = "130px";
+				circle5.style.height = "130px";
+				RuMine.style.top = "45%";
+			}
+		}
+
+	</script>
+
+</body>
+</html>
